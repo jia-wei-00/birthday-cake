@@ -1,23 +1,15 @@
-import React, { SetStateAction, useState } from "react";
+import React from "react";
 import Image from "next/image";
-import Draggable, { DraggableData, DraggableEvent } from "react-draggable";
+import Draggable from "react-draggable";
 import clsx from "clsx";
-
-export interface Position {
-  x: number;
-  y: number;
-}
 
 interface SquareProps {
   text: string;
   className?: string;
   style?: React.CSSProperties;
-  index?: number;
-  position?: Position[];
-  setPosition?: React.Dispatch<SetStateAction<Position[]>>;
 }
 
-const Square = ({ text, className, ...rest }: SquareProps) => {
+const Square = React.memo(({ text, className, ...rest }: SquareProps) => {
   return (
     <Draggable>
       <div>
@@ -40,6 +32,6 @@ const Square = ({ text, className, ...rest }: SquareProps) => {
       </div>
     </Draggable>
   );
-};
+});
 
 export default Square;

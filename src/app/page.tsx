@@ -50,7 +50,6 @@ const Home = () => {
         {papers.map((paper, index) => (
           <Square
             key={index}
-            index={index}
             text={paper.text}
             className={`transform`}
             style={{
