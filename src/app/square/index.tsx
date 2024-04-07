@@ -12,7 +12,7 @@ interface SquareProps {
 
 const Square = React.memo(({ text, className, ...rest }: SquareProps) => {
   return (
-    <Draggable>
+    <Draggable bounds="parent">
       <div>
         <div
           className={clsx(
