@@ -42,7 +42,7 @@ const Home = () => {
       <Image
         src="/bgpaper.jpg"
         alt="Background Image"
-        layout="fill"
+        fill
         className="z-[-1] rounded-md object-cover"
         draggable={false}
       />

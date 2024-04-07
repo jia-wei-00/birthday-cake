@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Draggable from "react-draggable";
@@ -23,7 +24,7 @@ const Square = React.memo(({ text, className, ...rest }: SquareProps) => {
           <Image
             src="/background.png"
             alt="Background Image"
-            layout="fill"
+            fill
             className="z-[-1] rounded-md filter brightness-90"
             draggable={false}
           />
@@ -33,5 +34,7 @@ const Square = React.memo(({ text, className, ...rest }: SquareProps) => {
     </Draggable>
   );
 });
+
+Square.displayName = "Square";
 
 export default Square;
