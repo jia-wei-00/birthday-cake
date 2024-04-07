@@ -23,7 +23,7 @@ const Square = ({ text, className, ...rest }: SquareProps) => {
       <div>
         <div
           className={clsx(
-            "flex flex-col absolute cursor-pointer select-none w-72 h-72 shadow-custom p-4",
+            "flex flex-col absolute cursor-pointer select-none w-72 h-72 shadow-custom p-4 rounded-md",
             className
           )}
           {...rest}
