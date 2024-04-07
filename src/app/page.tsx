@@ -7,7 +7,7 @@ import Link from "next/link";
 const Home = () => {
   const papers = [
     {
-      text: "Thank you for taking the time to read this",
+      text: "Thank you for taking the time to read this. Not a scam promise 🤜🤛",
       rotation: getRandomRotation(-25, 25),
     },
     {
