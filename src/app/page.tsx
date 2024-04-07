@@ -7,7 +7,11 @@ import Link from "next/link";
 const Home = () => {
   const papers = [
     {
-      text: "You can just reject me, but at least let me know leh",
+      text: "Thank you for taking the time to read this",
+      rotation: getRandomRotation(-25, 25),
+    },
+    {
+      text: "You can just reject me, but at least let me know...",
       rotation: getRandomRotation(-25, 25),
     },
     {
@@ -15,7 +19,7 @@ const Home = () => {
       rotation: getRandomRotation(-25, 25),
     },
     {
-      text: "But at least let me know leh",
+      text: "But at least reply to me leh",
       rotation: getRandomRotation(-25, 25),
     },
     {
@@ -30,7 +34,7 @@ const Home = () => {
       text: "Hi, how was your trip in Chongqing?",
       rotation: getRandomRotation(-25, 50),
     },
-    { text: "Drag the paper to move", rotation: getRandomRotation(-25, 25) },
+    { text: "Drag the card to move", rotation: getRandomRotation(-25, 25) },
   ];
 
   function getRandomRotation(min: number, max: number) {
