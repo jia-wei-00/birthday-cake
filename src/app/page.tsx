@@ -7,19 +7,23 @@ import Link from "next/link";
 const Home = () => {
   const papers = [
     {
-      text: "You can just reject but at least let me know leh",
+      text: "You can just reject me, but at least let me know leh",
       rotation: getRandomRotation(-25, 25),
     },
     {
-      text: "I know is too sudden. But, would you give me a chance to talk with you?",
+      text: "I know it's too sudden, but would you give me a chance to talk with you?",
       rotation: getRandomRotation(-25, 25),
     },
     {
-      text: "I don't know if you're busy or just don't want to reply me...",
+      text: "But at least let me know leh",
       rotation: getRandomRotation(-25, 25),
     },
     {
-      text: "Is been a long time you didn't reply me...",
+      text: "I don't know if you're busy or just don't want to reply to me...",
+      rotation: getRandomRotation(-25, 25),
+    },
+    {
+      text: "It's been a long time since you didn't reply me",
       rotation: getRandomRotation(-25, 25),
     },
     {
