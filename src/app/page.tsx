@@ -3,20 +3,6 @@ import Square from "./square";
 import Image from "next/image";
 import Link from "next/link";
 
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Card Message",
-  openGraph: {
-    type: "website",
-    images: [
-      {
-        url: "/preview.png",
-      },
-    ],
-  },
-};
-
 const Home = () => {
   const papers = [
     {
