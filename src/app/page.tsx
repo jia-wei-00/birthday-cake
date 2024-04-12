@@ -7,7 +7,6 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Card Message",
-  description: "Build by Next Js",
   openGraph: {
     type: "website",
     images: [
