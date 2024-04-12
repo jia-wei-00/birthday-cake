@@ -3,6 +3,7 @@ import React from "react";
 import Square from "./square";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 const Home = () => {
   const papers = [
@@ -42,32 +43,38 @@ const Home = () => {
   }
 
   return (
-    <div className="h-screen w-screen flex flex-col">
-      <Image
-        src="/bgpaper.jpg"
-        alt="Background Image"
-        fill
-        className="z-[-1] rounded-md object-cover"
-        draggable={false}
-      />
-      <div className="mx-auto my-auto relative w-[300px] h-[300px] flex">
-        {papers.map((paper, index) => (
-          <Square
-            key={index}
-            text={paper.text}
-            className={`transform`}
-            style={{
-              transform: `rotate(${paper.rotation}deg)`,
-            }}
-          />
-        ))}
-        <Link href="/reset" className="text-black mx-auto my-auto">
-          <button className="border border-solid border-slate-950 rounded-md py-2 px-5 hover:shadow-custom transition">
-            <p className="text-2xl">Reset</p>
-          </button>
-        </Link>
+    <>
+      <Head>
+        <meta property="og:image" content="/preview.png" />
+        <meta name="twitter:image" content="/preview.png" />
+      </Head>
+      <div className="h-screen w-screen flex flex-col">
+        <Image
+          src="/bgpaper.jpg"
+          alt="Background Image"
+          fill
+          className="z-[-1] rounded-md object-cover"
+          draggable={false}
+        />
+        <div className="mx-auto my-auto relative w-[300px] h-[300px] flex">
+          {papers.map((paper, index) => (
+            <Square
+              key={index}
+              text={paper.text}
+              className={`transform`}
+              style={{
+                transform: `rotate(${paper.rotation}deg)`,
+              }}
+            />
+          ))}
+          <Link href="/reset" className="text-black mx-auto my-auto">
+            <button className="border border-solid border-slate-950 rounded-md py-2 px-5 hover:shadow-custom transition">
+              <p className="text-2xl">Reset</p>
+            </button>
+          </Link>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
