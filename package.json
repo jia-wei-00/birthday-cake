@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fireworks-js/react": "^2.10.8",
     "@vercel/analytics": "^1.2.2",
     "@vercel/og": "^0.6.2",
     "clsx": "^2.1.0",
@@ -16,7 +17,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-draggable": "^4.4.6",
-    "sass": "^1.74.1"
+    "sass": "^1.79.4"
   },
   "devDependencies": {
     "@types/node": "^20",

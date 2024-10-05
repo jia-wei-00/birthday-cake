@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import Draggable from "react-draggable";
 import clsx from "clsx";
 
@@ -16,7 +15,7 @@ const Square = React.memo(({ text, className, ...rest }: SquareProps) => {
       <div>
         <div
           className={clsx(
-            "flex flex-col absolute cursor-pointer select-none w-72 h-72 shadow-custom p-4 rounded-md backdrop-blur-md",
+            "border-white/10 border bg-white/5 flex flex-col absolute cursor-pointer select-none w-72 h-72 shadow-custom p-4 rounded-md backdrop-blur-md",
             className
           )}
           {...rest}
