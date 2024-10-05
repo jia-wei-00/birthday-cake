@@ -28,7 +28,7 @@ const papers = [
     rotation: getRandomRotation(-25, 25),
   },
   {
-    text: "Happy Birthday!!",
+    text: "Sir, Happy Birthday!!",
     rotation: getRandomRotation(-25, 50),
   },
   { text: "Drag the card to move", rotation: getRandomRotation(-25, 25) },
